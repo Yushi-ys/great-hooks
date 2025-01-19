@@ -1,50 +1,22 @@
-# React + TypeScript + Vite
+# 收集一些工作和学习中经常用到的，或者觉得比较好用的hooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这里汇聚了众多实用且高效的 hooks，旨在为开发者提供一个便捷的资源库，帮助大家在项目开发中快速找到合适的hooks，提升开发效率，解决各种常见问题
 
-Currently, two official plugins are available:
+## 贡献指南
+我们非常欢迎广大开发者贡献优质的hooks！如果你有好的hooks想要分享，可以按照以下步骤进行：
+Fork 本项目到你的GitHub仓库。
+在你的仓库中，将你的hooks文件添加到对应分类的文件夹下，并确保文件有清晰的注释和使用说明。
+提交你的更改，并发起一个Pull Request 到本项目的主仓库。
+等待项目维护者审核，审核通过后你的hooks就会被合并到项目中。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 使用说明
+- 查找hooks：根据你的项目需求，在项目结构中找到对应的分类和hooks文件。
+- 阅读文档：打开hooks文件，仔细阅读注释和使用说明，了解hooks的功能和使用方法。
+- 引入使用：按照说明将hooks引入到你的项目中，并根据需要进行配置和调用。
 
-## Expanding the ESLint configuration
+## 项目维护
+本项目由 [Yushi-ys] 负责维护，我会定期更新和审核hooks，确保其质量和实用性。如果你在使用过程中遇到问题或有建议，欢迎随时通过Issues与我们联系。
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 版权声明
+本项目中的hooks版权归原作者所有，仅供学习和交流使用。在使用过程中，请遵守相关开源协议和版权声明。
+希望这个README对你有所帮助，如果你还有其他具体需求，比如想要突出某个特定功能或添加一些特殊说明等，随时告诉我，我可以进一步为你完善。
